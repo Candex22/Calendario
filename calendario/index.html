@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calendario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="calendar">
+                <div class="calendar__info">
+                    <button class="calendar__prev" id="prev-month">◀</button>
+                    <div class="calendar__month" id="month">Enero</div>
+                    <div class="calendar__year" id="year">2025</div>
+                    <button class="calendar__next" id="next-month">▶</button>
+                </div>
+                <div class="calendar-week">
+                    <div class="calendar__day">Lun</div>
+                    <div class="calendar__day">Mar</div>
+                    <div class="calendar__day">Mié</div>
+                    <div class="calendar__day">Jue</div>
+                    <div class="calendar__day">Vie</div>
+                    <div class="calendar__day">Sáb</div>
+                    <div class="calendar__day">Dom</div>
+                </div>
+                <div class="calendar__dates" id="dates"></div>
+            </div>
+            <div class="event-form">
+                <h3> Agregar Evento</h3>
+                <input type="date" id="event-date">
+                <input type="text" id="event-title" placeholder="Descripción del evento">
+                <button id="save-event">Guardar</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2> Eventos del Día</h2>
+            <ul id="day-events"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</html>
